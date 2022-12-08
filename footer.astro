@@ -1,0 +1,58 @@
+---
+import { Icon } from 'astro-icon';
+import { getHomePermalink } from '~/utils/permalinks';
+---
+
+<footer class="border-t border-gray-200 dark:border-slate-800">
+	<div class="mx-auto w-fit text-center">
+		<div class="">
+			<div class="col-span-12 lg:col-span-4">
+				<div class="mb-1">
+					<a class="inline-block font-bold text-md bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 " href={getHomePermalink()}>Supported by</a>
+				</div>
+				<div class="mb-2">
+					<a class="inline-block font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 " href={getHomePermalink()}>Sunat Ceria</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="md:flex md:items-center md:justify-between">
+			<div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
+				<span
+					class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-full bg-[url(https://pbs.twimg.com/profile_images/1599393472980451329/I1DEgZMq_400x400.jpg)]"
+				>
+				</span>
+				Hasil otak-atik <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://twitter.com/sarbeh_"> Sarbeh</a> ·
+			</div>
+			<ul class="flex justify-center items-center">
+				<li>
+					<a
+						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+						aria-label="Ibrahim"
+						href="#"
+					>
+						<Icon name="mdi:alpha-i-box" class="w-5 h-5" />
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+						aria-label="Nurul"
+						href="#"
+					>
+						<Icon name="mdi:alpha-n-box" class="w-5 h-5" />
+					</a>
+				</li>
+				<li>
+					<a
+						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+						aria-label="Huda"
+						href="#"
+					>
+						<Icon name="mdi:alpha-h-box" class="w-5 h-5" />
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
