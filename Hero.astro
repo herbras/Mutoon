@@ -1,26 +1,54 @@
 ---
 import { Icon } from 'astro-icon';
+import Picture from '~/components/core/Picture.astro';
 ---
 
 <section>
 	<div class="max-w-6xl mx-auto px-4 sm:px-6">
-		<div class="mx-5 my-12 grid items-start gap-6 dark:text-white md:grid-cols-2 lg:grid-cols-3">
-			<div class="grid grid-flow-col grid-rows-3 gap-4 rounded bg-white p-6 transition-all ease-out hover:translate-y-1 hover:shadow-lg hover:shadow-green-300 dark:border dark:border-slate-800 dark:bg-slate-900">
-			  <div class="col-span-2 ml-4 text-xl font-bold">قواعد الأصولية</div>
-			  <div class="text-md text-gray-500 dark:text-gray-400">A new way to travel by air the easy and fast way.</div>
-			  <div class="row-span-3 h-16 w-16"><Icon name="icon-park:bookmark" class=" mr-1 -ml-1.5" /></div>
+		<div class="py-12 md:py-20">
+			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					Sunat 
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">Nyaman</span>, Anak
+					<span
+						class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 sm:whitespace-nowrap"
+						> Ceria</span
+					>
+				</h1>
+				<div class="max-w-3xl mx-auto">
+					<p class="text-xl text-gray-600 dark:text-slate-400">
+						<span class="font-bold">Sunat Khitan Modern SOLO</span> memiliki fasilitas lengkap untuk memberikan pelayanan yang maksimal kepada para pasien, baik itu bayi maupun dewasa.					</p>
+					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
+						Sunat akan membawa sukacita, kebahagiaan dan kesenangan.  
+					</p>
+					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white border rounded-xl bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
+								href="https://api.whatsapp.com/send/?phone=6282140536672&text=Assalamualaikum,+saya+ingin+konsultasi+khitan"
+								target="_blank"
+								rel="noopener"
+							>
+								<Icon name="ic:baseline-whatsapp" class="w-6 h-6 mr-2 -ml-1.5" /> Jadwalkan
+							</a>
+						</div>
+						
+					</div>
+				</div>
 			</div>
-		  
-			<div class="grid grid-flow-col grid-rows-3 gap-4 rounded bg-white p-6 transition-all ease-out hover:translate-y-1 hover:shadow-lg hover:shadow-green-300 dark:border dark:border-slate-800 dark:bg-slate-900">
-			  <div class="col-span-2 ml-4 text-xl font-bold">قواعد الأصولية</div>
-			  <div class="text-md text-gray-500 dark:text-gray-400">A new way to travel by air the easy and fast way.</div>
-			  <div class="row-span-3 h-16 w-16"><Icon name="icon-park:bookmark" class=" mr-1 -ml-1.5" /></div>
+			<div>
+				<div class="relative mb-8 m-auto max-w-3xl">
+					<Picture
+						src={import('~/assets/images/hero.jpg')}
+						class="mx-auto rounded-l-md shadow-lg dark:shadow bg-gray-400 dark:bg-slate-700 w-full"
+						widths={[400, 768]}
+						sizes="(max-width: 767px) 400px, 768px"
+						alt="Hero Image"
+						aspectRatio="16:9"
+						loading="eager"
+					/>
+				</div>
 			</div>
-			<div class="grid grid-flow-col grid-rows-3 gap-4 rounded bg-white p-6 transition-all ease-out hover:translate-y-1 hover:shadow-lg hover:shadow-green-300 dark:border dark:border-slate-800 dark:bg-slate-900">
-			  <div class="col-span-2 ml-4 text-xl font-bold">قواعد الأصولية</div>
-			  <div class="text-md text-gray-500 dark:text-gray-400">A new way to travel by air the easy and fast way.</div>
-			  <div class="row-span-3 h-16 w-16"><Icon name="icon-park:bookmark" class=" mr-1 -ml-1.5" /></div>
-			</div>
-		  </div>
+		</div>
 	</div>
 </section>
